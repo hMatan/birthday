@@ -102,35 +102,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="row message">
-			<div class="col-md-12">
-				<p>! יום הולדת שמח מתוק 🎉🎂</p>
-				<p>,היום הוא יום מיוחד</p>
-				<p>.לא סתם עוד יום רגיל</p>
-				<p>היום זהו יום ההולדת שלך</p>
-				<p>וחוגגים לך התחלה של שנה חדשה</p>
-				<p>שנה של שמחה כיף והמון הפתעות			</p>
-				<p>,מאחלים לך את כל האושר שבעולם</p>
-                               <p>,שהשנה הזו תהיה מלאה בחוויות מדהימות</p>
-                               <p>,בהגשמת חלומות</p>
-                               <p>! ובכל מה שגורם לך להיות מאושר </p>
-				<p>אוהבים אותך המון המון המון</p>
-				<p> :) ההירשביינים מהצפון  </p>
-			</div>
-		</div>
-		<div class="navbar navbar-fixed-bottom">
-			<div class="row">
-				<div class="col-md-6 text-center col-md-offset-3">
-					<button class="btn btn-primary" id="turn_on">תדליק את האור </button>
-					<button class="btn btn-primary" id="play">נגן מוסיקה</button>
-					<button class="btn btn-primary" id="bannar_coming">בוא נתחיל</button>
-					<button class="btn btn-primary" id="balloons_flying">טוס על גבי הבלונים</button>
-					<button class="btn btn-primary" id="cake_fadein">העוגה הכי מושקעת בעולם</button>
-					<button class="btn btn-primary" id="light_candle"> תדליק את הנר</button>
-					<button class="btn btn-primary" id="wish_message">מזל טוב גונצ'וק</button>
-					<button class="btn btn-primary" id="story"> ועכשיו לברכה </button>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
-				</div>
+<div class="row message">
+    <div class="col-md-12" id="birthdayMessage"></div>
+</div>
+
+<div class="navbar navbar-fixed-bottom">
+    <div class="row">
+        <div class="col-md-6 text-center col-md-offset-3" id="buttonContainer"></div>
+    </div>
+</div>
+
+<script src="config.js"></script>
+<script>
+    // Load Messages
+    const messageContainer = document.getElementById("birthdayMessage");
+    birthdayConfig.messages.forEach(text => {
+        let p = document.createElement("p");
+        p.textContent = text;
+        messageContainer.appendChild(p);
+    });
+
+    // Load Buttons
+    const buttonContainer = document.getElementById("buttonContainer");
+    Object.entries(birthdayConfig.buttons).forEach(([id, text]) => {
+        let button = document.createElement("button");
+        button.className = "btn btn-primary";
+        button.id = id;
+        button.textContent = text;
+        buttonContainer.appendChild(button);
+    });
+</script>
+
 			</div>
 			<!-- <div class="col-md-2">
 			</div>
