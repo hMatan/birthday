@@ -14,7 +14,7 @@ const birthdayConfig = {
         ":) ההירשביינים מהצפון"
     ],
     buttons: {
-        "turn_on": "תדליק את האור",
+        "turn_on": " בבקשה תדליק את האור",
         "play": "נגן מוסיקה",
         "bannar_coming": "בוא נתחיל",
         "balloons_flying": "טוס על גבי הבלונים",
@@ -23,6 +23,6 @@ const birthdayConfig = {
         "wish_message": "מזל טוב גונצ'וק",
         "story": "ועכשיו לברכה"
     },
-    balloons: ["*", "י", "נ", "ו", "ג", "*", "*"],
+    balloons: [ "י", "נ", "ו", "ג"],
     balloonColors: ["#F2B300", "#0719D4", "#D14D39", "#8FAD00", "#8377E4", "#99C96A", "#20CFB4"]
 };
