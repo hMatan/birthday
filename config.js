@@ -20,7 +20,7 @@ const birthdayConfig = {
         "balloons_flying": "טוס על גבי הבלונים",
         "cake_fadein": "העוגה הכי מושקעת בעולם",
         "light_candle": "תדליק את הנר",
-        "wish_message": "מזל טוב גונצ'וק",
+        "wish_message": "מזל טוב אביחי",
         "story": "ועכשיו לברכה"
     },
     balloons: [ "י", "נ", "ו", "ג"],
